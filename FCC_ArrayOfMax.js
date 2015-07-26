@@ -34,3 +34,7 @@ function largestOfFour(arr) {
 	console.log(maxArray);
 	return maxArray;
 }
+
+var test = [[2,4,3,5],[6,100,5,8],[7,9,34,65],[9000,10000,5,3400]];
+
+largestOfFour(test);
