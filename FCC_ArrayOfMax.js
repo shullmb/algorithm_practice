@@ -19,7 +19,7 @@ iterate over n[i] where i = m[j]
 return x	
 
 */
-function largestOfFour(arr) {
+function arrayOfMaxes(arr) {
 	var maxArray = [];
 	for ( var i = 0; i < arr.length; i++) {
 		var subArray = arr[i];
@@ -37,4 +37,4 @@ function largestOfFour(arr) {
 
 var test = [[2,4,3,5],[6,100,5,8],[7,9,34,65],[9000,10000,5,3400]];
 
-largestOfFour(test);
+arrayOfMaxes(test);
