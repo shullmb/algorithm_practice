@@ -9,8 +9,8 @@ Output: truncated string with ellipses tacked on end
 	
 If length n > m
 	sliceStart = 0
-	sliceEnd = m - 3
-	concatenate truncated string + ...
+	sliceEnd = -3-num
+	concatenate truncated string + '...'
 Else 
 	do not slice string
 
@@ -19,7 +19,7 @@ Else
 */
 
 function truncate(str, num) {
-	var sliced = str.slice(0, num - 3)
+	var sliced = str.slice(0, (-3-num));
 	if (sliced.length > num ) {
 		return sliced + "...";
 	} else {
