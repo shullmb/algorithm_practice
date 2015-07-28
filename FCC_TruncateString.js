@@ -9,7 +9,7 @@ Output: truncated string with ellipses tacked on end
 	
 If length n > m
 	sliceStart = 0
-	sliceEnd = -3-num
+	sliceEnd = 
 	concatenate truncated string + '...'
 Else 
 	do not slice string
@@ -17,15 +17,13 @@ Else
 
 
 */
-
 function truncate(str, num) {
-	var sliced = str.slice(0, (-3-num));
-	if (sliced.length > num ) {
+	var sliced = str.slice(0, (num-3));
+	if (str.length > num)  {
 		return sliced + "...";
 	} else {
-		return "This isn't working yet"
+		return str;
 	}
 	
 }
-
 truncate('A-tisket a-tasket A green and yellow basket', 11);
