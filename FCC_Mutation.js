@@ -20,7 +20,7 @@ function mutation(arr) {
 	for (i = 0; i < indB.length; i++) {
 		if (indA.indexOf(indB[i]) === -1 ) {
 			return false;
-		} else {
+		} else if (indA.indexOf(indB[i] >= 0) {
 			return true;
 		}
 	}
