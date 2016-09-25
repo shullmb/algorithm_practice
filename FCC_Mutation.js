@@ -8,22 +8,37 @@ the string in the second element of the array.
  Inputs: Array with two string indices
  Ourput: Boolean True or False
  
- if Array[1] contains all
 
-INCOMPLETE
+####
+
+1)take arr[0] as standard string to compare against -- standard
+
+2)take arr[1] as string to test -- testArr
+
+3)split arr[1] to make and array of test characters
+
+4)compare each element of testArr against standard to determine if it is included in the string
+    indexOf()
+        pos = true
+        -1 = false
+    
+    iterate through arr of testArr
+        check standard.indexOf(testArr[i])
+            if -1, return false
+
 */
 
-function mutation(arr) {
-	indA = arr[0].toLowerCase();
-	indB = arr[1].toLowerCase().split('');
-	
-	for (i = 0; i < indB.length; i++) {
-		if (indA.indexOf(indB[i]) === -1 ) {
-			return false;
-		} else if (indA.indexOf(indB[i] >= 0) {
-			return true;
-		}
-	}
+function mutation(arr){
+    var standard = arr[0].toLowercase();
+    var testArr = arr[1].toLowercase().split("");
+
+    for (var i=0; i < testArr.length; i++){
+        if (standard.indexOf(testArr[i]) < 0 ){
+            return false;
+        }
+    }
+    return true;
+
 }
 
 
